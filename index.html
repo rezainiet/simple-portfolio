@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Portfolio website</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+	<!----hero Section start---->
+
+	<div class="hero">
+		<nav>
+			<h2 class="logo">Portfo<span>lio</span></h2>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About Me</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Skills</a></li>
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="#">Download Resume</a></li>
+			</ul>
+		</nav>
+
+		<div class="content">
+			<h4>Hello, my name is</h4>
+			<h1>Masud <span>Reza</span></h1>
+			<h3>I'am a Web Developer.</h3>
+			<div class="newslatter">
+				<form>
+					<input type="email" name="email" id="mail" placeholder="Enter Your Email">
+					<input type="submit" name="submit" value="Lets Start">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!----About section start---->
+	<section class="about">
+		<div class="main">
+			<img src="img/main-img.png">
+			<div class="about-text">
+				<h2>About Me</h2>
+				<h5>Developer <span>& Designer</span></h5>
+				<p>I am a front-end web developer. I can provide clean code and pixel perfect design. I also make the
+					website more & more interactive with web animations.I can provide clean code and pixel perfect
+					design. I also make the website more & more interactive with web animations.A responsive design
+					makes your website accessible to all users, regardless of their device.</p>
+				<button type="button">Let's Talk</button>
+			</div>
+		</div>
+	</section>
+
+	<!-----service section start----------->
+	<div class="service">
+		<div class="title">
+			<h2>My Services</h2>
+		</div>
+
+		<div class="box">
+			<div class="card">
+				<i class="fas fa-bars"></i>
+				<h5>Web Development</h5>
+				<div class="pra">
+					<p>Every website should be built with two primary goals: Firstly, it needs to work across all
+						devices. Secondly, it needs to be fast as possible.</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="far fa-user"></i>
+				<h5>Web Development</h5>
+				<div class="pra">
+					<p>Every website should be built with two primary goals: Firstly, it needs to work across all
+						devices. Secondly, it needs to be fast as possible.</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="far fa-bell"></i>
+				<h5>Web Development</h5>
+				<div class="pra">
+					<p>Every website should be built with two primary goals: Firstly, it needs to work across all
+						devices. Secondly, it needs to be fast as possible.</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!------Contact Me------>
+	<div>
+		<iframe id="JotFormIFrame-221595781728468" title="Contact me Form" onload="window.parent.scrollTo(0,0)"
+			allowtransparency="true" allowfullscreen="true" allow="geolocation; microphone; camera"
+			src="https://form.jotform.com/221595781728468" frameborder="0" style="
+		      min-width: 100%;
+		      height:539px;
+		      border:none;" scrolling="no">
+		</iframe>
+		<script type="text/javascript">
+			var ifr = document.getElementById("JotFormIFrame-221595781728468");
+			if (ifr) {
+				var src = ifr.src;
+				var iframeParams = [];
+				if (window.location.href && window.location.href.indexOf("?") > -1) {
+					iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
+				}
+				if (src && src.indexOf("?") > -1) {
+					iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+					src = src.substr(0, src.indexOf("?"))
+				}
+				iframeParams.push("isIframeEmbed=1");
+				ifr.src = src + "?" + iframeParams.join('&');
+			}
+			window.handleIFrameMessage = function (e) {
+				if (typeof e.data === 'object') { return; }
+				var args = e.data.split(":");
+				if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
+				if (!iframe) { return; }
+				switch (args[0]) {
+					case "scrollIntoView":
+						iframe.scrollIntoView();
+						break;
+					case "setHeight":
+						iframe.style.height = args[1] + "px";
+						break;
+					case "collapseErrorPage":
+						if (iframe.clientHeight > window.innerHeight) {
+							iframe.style.height = window.innerHeight + "px";
+						}
+						break;
+					case "reloadPage":
+						window.location.reload();
+						break;
+					case "loadScript":
+						if (!window.isPermitted(e.origin, ['jotform.com', 'jotform.pro'])) { break; }
+						var src = args[1];
+						if (args.length > 3) {
+							src = args[1] + ':' + args[2];
+						}
+						var script = document.createElement('script');
+						script.src = src;
+						script.type = 'text/javascript';
+						document.body.appendChild(script);
+						break;
+					case "exitFullscreen":
+						if (window.document.exitFullscreen) window.document.exitFullscreen();
+						else if (window.document.mozCancelFullScreen) window.document.mozCancelFullScreen();
+						else if (window.document.mozCancelFullscreen) window.document.mozCancelFullScreen();
+						else if (window.document.webkitExitFullscreen) window.document.webkitExitFullscreen();
+						else if (window.document.msExitFullscreen) window.document.msExitFullscreen();
+						break;
+				}
+				var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+				if (isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+					var urls = { "docurl": encodeURIComponent(document.URL), "referrer": encodeURIComponent(document.referrer) };
+					iframe.contentWindow.postMessage(JSON.stringify({ "type": "urls", "value": urls }), "*");
+				}
+			};
+			window.isPermitted = function (originUrl, whitelisted_domains) {
+				var url = document.createElement('a');
+				url.href = originUrl;
+				var hostname = url.hostname;
+				var result = false;
+				if (typeof hostname !== 'undefined') {
+					whitelisted_domains.forEach(function (element) {
+						if (hostname.slice((-1 * element.length - 1)) === '.'.concat(element) || hostname === element) {
+							result = true;
+						}
+					});
+					return result;
+				}
+			};
+			if (window.addEventListener) {
+				window.addEventListener("message", handleIFrameMessage, false);
+			} else if (window.attachEvent) {
+				window.attachEvent("onmessage", handleIFrameMessage);
+			}
+		</script>
+	</div>
+
+	<!------footer start--------->
+	<footer>
+		<p>Masud Reza</p>
+		<p>I'm expertise on ReactJS, HTML, CSS and familiar with MERN Stack Development</p>
+		<div class="social">
+			<a href="#"><i class="fab fa-facebook-f"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-dribbble"></i></a>
+		</div>
+		<p class="end">CopyRight By Masud Reza</p>
+	</footer>
+</body>
+
+</html>
